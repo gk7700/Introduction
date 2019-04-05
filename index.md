@@ -13,7 +13,7 @@ This quickstart guide will provide the user a concise step-based approach to the
 * [Adding user accounts](https://github.com/gk7700/Quickstart/blob/master/index.md) 
 * [Connecting to the Owncloud server using desktop client](https://github.com/gk7700/connecting-to-an-ownCloud-Server-using-Desktop-Client/blob/master/index.md)
 
- ## Full Documentation
+ ## Full Documentation  
 
 See the [ownCloud Documentation](https://doc.owncloud.com/server/) for full documentation, which includes, **Release Notes**, **User Manual**, **Admin Manual**, and **Developer Manual**.
 
