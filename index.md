@@ -17,3 +17,7 @@ For bugs, questions and discussions please use the [GitHub Issues](https://githu
 ## License
 
 Copyright (c) 2019 Gautam Inc. All rights reserved.
+
+## Contact Information
+
+Please contact us if you need assistance regarding these quickstart, e.g. for discussing your case or requesting permission, by sending a email to gk77700@gmail.com.
