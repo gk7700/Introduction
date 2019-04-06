@@ -12,9 +12,9 @@ Once done, set your webserver user to be the owner of your unpacked ownCloud dir
 
 	$ sudo chown -R www-data:www-data /var/www/owncloud/
 
-3.	Use the occ command to complete the installation process
+3.	Use the `occ` command to complete the installation process
 
-Use the occ command, from the root directory of the ownCloud source, to perform the installation. This removes the need to run the [Graphical Installation Wizard]( https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html).
+Use the `occ` command, from the root directory of the ownCloud source, to perform the installation. This removes the need to run the [Graphical Installation Wizard]( https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html).
 
 	# Assuming you’ve unpacked the source to /var/www/owncloud/
 	$ cd /var/www/owncloud/
@@ -23,13 +23,13 @@ Use the occ command, from the root directory of the ownCloud source, to perform 
 	   --database-user "root" --database-pass "password" \
  	   --admin-user "admin" --admin-pass "password"
 
->Note: You must run occ as your [HTTP user]( >https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#set-strong-directory-permissions).
+>Note: You must run `occ` as your [HTTP user]( >https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#set-strong-directory-permissions).
 
-If you want to use a directory other than the default (which is data inside the root ownCloud directory), you can also supply the --data-dir switch. For example, if you were using the command above and you wanted the data directory to be /opt/owncloud/data, then add --data-dir /opt/owncloud/data to the command.
+If you want to use a directory other than the default (which is data inside the root ownCloud directory), you can also supply the `--data-dir` switch. For example, if you were using the command above and you wanted the data directory to be `/opt/owncloud/data`, then add `--data-dir/opt/owncloud/data` to the command.
 
 4.	Apply the correct owner and permissions to your ownCloud files and directories
-Once the command is executed, apply the [correct permissions]( https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#set-strong-directory-permissions) to your ownCloud files and directories.
+Once the command is executed, apply the [strong directory permissions]( https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#set-strong-directory-permissions) to your ownCloud files and directories.
 
-Note: This is extremely important, as it helps protect your ownCloud installation and ensure that it will operate correctly.
+>Note: This is extremely important, as it helps protect your ownCloud installation and ensure that it will operate correctly.
 
 5.	(Optional) post#.installation considerations
