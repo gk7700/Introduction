@@ -4,7 +4,7 @@
 
 ## Introduction
 
-ownCloud is a free and open-source file sharing server for creating and using file hosting services. It is a suite of client-server software where you can access and share your files, directories, contacts, calendars, mail, and a lot more. ownCloud enables you to access, manage, and upload these files and other data (such as calendars, contacts, and bookmarks) from desktop machines, mobile devices, and also through web browsers without using any additional software.   
+ownCloud is a free and open-source file sharing server for creating and using file hosting services. By providing a safe, secure, and compliant file synchronization and sharing solution, ownCloud caters to the customers' need right from individuals operating the free ownCloud Server edition, to large enterprises and service providers operating the ownCloud Enterprise Subscription. It is a suite of client-server software where you can access and share your files, directories, contacts, calendars, mail, and a lot more. ownCloud enables you to access, manage, and upload these files and other data (such as calendars, contacts, and bookmarks) from desktop machines, mobile devices, and also through web browsers without using any additional software.   
 
 ownCloud includes the ownCloud server, which runs on Linux platform, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.
 
