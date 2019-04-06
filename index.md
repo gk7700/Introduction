@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/40832072/55623859-cf50e280-57c1-11e9-814b-8bdac30adac6.png" width="256" title="Github Logo">
+  <img src="https://user-images.githubusercontent.com/40832072/55623859-cf50e280-57c1-11e9-814b-8bdac30adac6.png" width="256" title="ownCloud Logo">
 </p>
 
 ## Introduction
