@@ -1,6 +1,6 @@
 ### Command Line Installation
 
-There are different methods and platforms for installing an ownCloud server. However, administrators prefer using the command line over a graphic user interface (GUI) ownCloud can be installed entirely from the command line. Command line installation involves five steps:
+There are different methods and platforms for installing an ownCloud server. However, administrators prefer using the command line over a graphic user interface (GUI). Command line installation involves five steps:
 
 1.	Ensure your server meets the [ownCloud prerequisites](https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#prerequisites)  
 
