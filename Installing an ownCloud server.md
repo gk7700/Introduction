@@ -8,7 +8,7 @@ Before installing the application for the first time, ensure that you have root 
 >Note: At the time of writing this manual, version 10.1 is the latest stable version of ownCloud server.
 
 ## Prerequisites 
-Requirements for successful installation and configuration of an ownCloud server. 
+[Detailed installation checklist](https://github.com/gk7700/Introduction/blob/master/Installation%20Prerequisites.md) 
 
 ### Command Line Installation  
 There are different methods and platforms for installing an ownCloud server. However, administrators prefer using the command line over a graphic user interface (GUI). Command line installation involves five steps:
