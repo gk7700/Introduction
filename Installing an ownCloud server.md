@@ -15,7 +15,7 @@ There are different methods and platforms for installing an ownCloud server. How
 
 1.	Ensure your server meets the following [ownCloud prerequisites](https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#prerequisites)  
 
-2.	Once all the prerequisites are met, download and unpack the tarball  
+2.	Once all the prerequisites are met, download and unpack the tarball. (Follow the [Preferred Linux Installation Method](https://doc.owncloud.org/server/9.1/admin_manual/installation/linux_installation.html) and [Manual Installation on Linux](https://doc.owncloud.org/server/9.1/admin_manual/installation/source_installation.html)) 
 
 To install ownCloud, first [download the source](https://owncloud.org/download/#instructions-server) (whether community or enterprise) directly from ownCloud, and then unpack the tarball in appropriate directories.  
 
@@ -25,7 +25,7 @@ Once done, set your webserver user to be the owner of your unpacked ownCloud dir
 
 3.	Use the `occ` command to complete the installation process
 
-Use the `occ` command, from the root directory of the ownCloud source, to perform the installation. This removes the need to run the [Graphical Installation Wizard]( https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html).
+Use the `occ` command, from the root directory of the ownCloud source, to perform the installation. This removes the need to run the [Graphical Installation Wizard](https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html).
 
 	# Assuming you’ve unpacked the source to /var/www/owncloud/
 	$ cd /var/www/owncloud/
@@ -34,7 +34,7 @@ Use the `occ` command, from the root directory of the ownCloud source, to perfor
 	   --database-user "root" --database-pass "password" \
  	   --admin-user "admin" --admin-pass "password"
 
->Note: You must run `occ` as your [HTTP user]( >https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#set-strong-directory-permissions).
+>Note: You must [Run occ As Your HTTP User](https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/occ_command.html#http-user-label).
 
 If you want to use a directory other than the default (which is data inside the root ownCloud directory), you can also supply the `--data-dir` switch. For example, if you were using the command above and you wanted the data directory to be `/opt/owncloud/data`, then add `--data-dir/opt/owncloud/data` to the command.
 
