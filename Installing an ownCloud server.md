@@ -13,7 +13,7 @@ Following [prerequisites](https://github.com/gk7700/Introduction/blob/master/Ins
 ### Command Line Installation  
 There are different methods and platforms for installing an ownCloud server. However, administrators prefer using the command line over a graphic user interface (GUI). Command line installation involves five steps:
 
-1.	Ensure your server meets the [ownCloud prerequisites](https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#prerequisites)  
+1.	Ensure your server meets the following [ownCloud prerequisites](https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#prerequisites)  
 
 2.	Once all the prerequisites are met, download and unpack the tarball  
 
@@ -38,8 +38,8 @@ Use the `occ` command, from the root directory of the ownCloud source, to perfor
 
 If you want to use a directory other than the default (which is data inside the root ownCloud directory), you can also supply the `--data-dir` switch. For example, if you were using the command above and you wanted the data directory to be `/opt/owncloud/data`, then add `--data-dir/opt/owncloud/data` to the command.
 
-4.	Apply the correct owner and permissions to your ownCloud files and directories
-Once the command is executed, apply the [strong directory permissions]( https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#set-strong-directory-permissions) to your ownCloud files and directories.
+4.	Apply correct permissions to your ownCloud files and directories
+Once the command is executed, [Set Strong Directory Permissions]( https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#set-strong-directory-permissions) to your ownCloud files and directories.
 
 >Note: This is extremely important, as it helps protect your ownCloud installation and ensure that it will operate correctly.
 
