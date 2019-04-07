@@ -23,7 +23,8 @@ Once done, set your webserver user to be the owner of your unpacked ownCloud dir
 
 	$ sudo chown -R www-data:www-data /var/www/owncloud/
 
-3.	Use the `occ` command to complete the installation process
+3.	Use the `occ`(ownCloud console) command to complete the installation process. 
+>**Note**: occ is ownCoud's command-line interface
 
 Use the `occ` command, from the root directory of the ownCloud source, to perform the installation. This removes the need to run the [Graphical Installation Wizard](https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html).
 
