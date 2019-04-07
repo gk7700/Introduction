@@ -32,4 +32,4 @@ Copyright (c) 2019 ownCloud Inc. All rights reserved.
 
 ## Contact Information
 
-Please contact if you need assistance regarding these quickstart guides, for discussing your case or requesting permission, by sending us an email to gk7700@gmail.com
+Please contact if you need assistance regarding these quickstart guides, for discussing your case or requesting permission, by sending us an email to <gk7700@gmail.com>
