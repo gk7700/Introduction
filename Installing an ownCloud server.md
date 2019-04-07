@@ -44,3 +44,14 @@ Once the command is executed, [Set Strong Directory Permissions]( https://doc.ow
 >Note: This is extremely important, as it helps protect your ownCloud installation and ensure that it will operate correctly.
 
 5.	(Optional) [Post-Installation Steps](https://doc.owncloud.org/server/10.1/admin_manual/installation/installation_wizard.html#post-installation-steps)
+
+### Other Installation Methods 
+Listed below are other methods you can use to install an OwnCloud server:
+* [Linux Package Manager Installation](https://doc.owncloud.org/server/10.1/admin_manual/installation/linux_installation.html) is used for signle-server setups.
+* [Installation Wizard](https://doc.owncloud.org/server/10.1/admin_manual/installation/installation_wizard.html) is used when the ownCloud prerequisites are fulfilled and all ownCloud files are installed.
+* [Manual Installation](https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html) can also be done on different Linux distributions
+     * [Ubuntu 18.04 LTS Server](https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#on-ubuntu-18.04-lts-server)
+     * [RHEL (RedHat Enterprise Linux) 7.2](https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#rhel-redhat-enterprise-linux-7.2) 
+     * [CentOS 7](https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#centos-7)
+     * [SLES (SUSE Linux Enterprise Server) 12](https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#sles-suse-linux-enterprise-server-12)
+
