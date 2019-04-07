@@ -1,4 +1,4 @@
-## Prerequisites for installing an ownCloud server  
+## Prerequisites for Installing an ownCloud Server  
 
 The following requirements must be met to install and configure an ownCloud server:
 
