@@ -24,7 +24,7 @@ Memory | Minimum of 512 MB
 It is recommended to use **PHP {recommended-php-version}** as older versions have reached {php-supported-versions-url}[EOL] and will be
 deprecated for use with ownCloud Server in a future release.    
 
->**Note**: 
+>**Note**: Supported editions 
 >* Red Hat Enterprise Linux & Centos 7 are 64-bit only.  
 >* Oracle 11g is only supported for the Enterprise edition.  
 >* SQLite is not encouraged for production use  
