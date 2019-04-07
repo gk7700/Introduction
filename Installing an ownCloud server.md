@@ -43,4 +43,4 @@ Once the command is executed, [Set Strong Directory Permissions]( https://doc.ow
 
 >Note: This is extremely important, as it helps protect your ownCloud installation and ensure that it will operate correctly.
 
-5.	(Optional) post#.installation considerations
+5.	(Optional) [Post-Installation Steps](https://doc.owncloud.org/server/10.1/admin_manual/installation/installation_wizard.html#post-installation-steps)
