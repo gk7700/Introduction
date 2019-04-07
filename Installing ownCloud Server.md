@@ -57,5 +57,5 @@ Listed below are other methods you can use to install an OwnCloud server:
      * [CentOS 7](https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#centos-7)
      * [SLES (SUSE Linux Enterprise Server) 12](https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#sles-suse-linux-enterprise-server-12)
      
-### Configuring ownCloud server
+## Configuring ownCloud server
 Follow the link for a detailed overview on how to [Configure an ownCloud Server](https://github.com/gk7700/Introduction/blob/master/Configuration.md)
