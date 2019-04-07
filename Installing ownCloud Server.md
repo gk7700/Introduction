@@ -1,3 +1,6 @@
+<p style="text-align:center ;">Installing ownCloud Server</p>
+
+ 
 ## Introduction 
 
 This quick start guide describes the system requirements and also explains how to install and configure an ownCloud server.
