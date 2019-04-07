@@ -10,7 +10,7 @@ Configuring MYSQL/MariaDb database requires you to install and set up the server
 
 >**Note**: The choice of database will not alter the fuctionality of ownCloud. However, we reccomend using MySQL or MariaDB database engines for configuring ownCloud.
 
-### MySQL / MariaDB with Binary Logging Enabled  
+### MySQL or MariaDB with Binary Logging Enabled  
 
 To avoid data loss under high load scenarios, ownCloud is currently using a `TRANSACTION_READ_COMMITTED` transaction isolation. This requires a disabled or correctly configured binary logging when using MySQL or MariaDB. Your system is affected if you see the following in your log file during the installation or update of ownCloud:  
 
