@@ -1,35 +1,16 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/40832072/55623859-cf50e280-57c1-11e9-814b-8bdac30adac6.png" width="256" title="ownCloud Logo">
-</p>
+## Redhat-Technical Writer Test
 
-## Introduction
+### Task A: Create a Quickstart for Installing and Using ownCloud 
+Create a quickstart for installing an Owncloud server and connecting to it as a client. Your quickstart must address the following user stories:    
+1. As an administrator, how do I install and configure an Owncloud server?
+2. As an administrator, how do I enable users to connect to the Owncloud server using the server's IP address and port 8080? 
+3. As an administrator, how do I add a user account?  
+4. As a user, how do I connect to the Owncloud server using a desktop or mobile client?    
 
-ownCloud is a free and open-source file sharing server for creating and using file hosting services. By providing a safe, secure, and compliant file synchronization and sharing solution, ownCloud caters to the customers' need right from individuals operating the free ownCloud Server edition, to large enterprises and service providers operating the ownCloud Enterprise Subscription. It is a suite of client-server software where you can access and share your files, directories, contacts, calendars, mail, and a lot more. ownCloud enables you to access, manage, and upload these files and other data (such as calendars, contacts, and bookmarks) from desktop machines, mobile devices, and also through web browsers without using any additional software.   
+### Task B: Publish your Quickstart using Github Pages  
+Write your quickstart in Markdown and publish it using ​GitHub Pages​ and ​Jekyll​.  
 
-ownCloud includes the ownCloud server, which runs on Linux platform, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.
-
-For getting information on other enterprise products, and for other useful links about the organization, board of directors, and its history, please visit our [ownCloud website](https://owncloud.org/).
-You can also subscribe to our monthly [newsletter](https://owncloud.org/newsletter/) and never miss an important update again.
-
-## Getting Started
-This quickstart guide will provide the user a concise step-based approach to the following user stories:
-* [Installing and configuring an Owncloud server](https://github.com/gk7700/connecting-to-an-ownCloud-Server-using-Desktop-Client/blob/master/index.md)
-* [Enabling users to connect to the Owncloud server using the server's IP address and port 8080](https://github.com/gk7700/connecting-to-an-ownCloud-Server-using-Desktop-Client/blob/master/index.md)
-* [Adding user accounts](https://github.com/gk7700/Quickstart/blob/master/index.md) 
-* [Connecting to the Owncloud server using desktop client](https://github.com/gk7700/connecting-to-an-ownCloud-Server-using-Desktop-Client/blob/master/index.md)
-
- ## Full Documentation  
- 
-See the [ownCloud Documentation](https://doc.owncloud.com/server/) for full documentation, which includes, **Release Notes**, **User Manual**, **Admin Manual**, and **Developer Manual**.
-
-## Bugs and Feedback
-
-For bugs, questions and discussions please use the [GitHub Issues](https://github.com/gk7700/Introduction/issues).  
-
-## License
-
-Copyright (c) 2019 ownCloud Inc. All rights reserved.
-
-## Contact Information
-
-Please contact if you need assistance regarding these quickstart guides, for discussing your case or requesting permission, by sending us an email to <gk7700@gmail.com>
+### Task C: Submit a Link to your Quickstart  
+Send us your links to: 
+1. The Github Pages site for your quickstart. This should display the rendered HTML from the markdown file in your Github repository. 
+2. The GitHub repository with your markdown.  
