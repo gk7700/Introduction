@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ownCloud Quickstart
-email: gautam.kumar23041309@gmail.com
+email: gk7700@gmail.com
 description: "" 
-baseurl: "Redhat-Technical-Writer-Test" # the subpath of your site, e.g. /blog
+baseurl: "Sample" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
