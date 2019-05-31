@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/Sample/assets/css/style.css?v=b67d0b7b091b57b0386e19956e92f7193e07ad47">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>ownCloud Quickstart</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="ownCloud Quickstart" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Sample/Installing/" />
+<meta property="og:url" content="http://localhost:4000/Sample/Installing/" />
+<meta property="og:site_name" content="ownCloud Quickstart" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/Sample/Installing/","headline":"ownCloud Quickstart","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gk7700/Introduction">View on GitHub</a>
+
+          <h1 id="project_title">ownCloud Quickstart</h1>
+          <h2 id="project_tagline"></h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="user-story-1-installing-and-configuring-owncloud-server">User Story 1: Installing and Configuring ownCloud Server</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This quickstart guide describes the system requirements and also explains how to install and configure an ownCloud server.</p>
+
+<p>Understanding and ensuring your system meets all of the described prerequisites before you begin installing the product will help ensure a successful outcome.</p>
+
+<p>Before installing the application for the first time, ensure that you have root privileges for the servers and the software described in the prerequisites section below has already been installed and configured.</p>
+
+<blockquote>
+  <p>Note: At the time of writing this manual, version 10.1 is the latest stable version of ownCloud server.</p>
+</blockquote>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Following <a href="https://gk7700.github.io/Introduction/Prerequisites/">prerequisites</a> must be met for successful installation and configuration of an ownCloud server.</p>
+
+<h2 id="installing-owncloud-server">Installing ownCloud Server</h2>
+<h3 id="command-line-installation">Command Line Installation</h3>
+<p>There are different methods and platforms for installing an ownCloud server. However, administrators prefer using the command line over a graphic user interface (GUI). Command line installation involves five steps:</p>
+
+<ol>
+  <li>
+    <p>Ensure your server meets the following <a href="https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#prerequisites">ownCloud prerequisites</a></p>
+  </li>
+  <li>
+    <p>Once all the prerequisites are met, download and unpack the tarball. (Follow the <a href="https://doc.owncloud.org/server/9.1/admin_manual/installation/linux_installation.html">Preferred Linux Installation Method</a> and <a href="https://doc.owncloud.org/server/9.1/admin_manual/installation/source_installation.html">Manual Installation on Linux</a>)</p>
+  </li>
+</ol>
+
+<p>To install ownCloud, first <a href="https://owncloud.org/download/#instructions-server">download the source</a> (whether community or enterprise) directly from ownCloud, and then unpack the tarball in appropriate directories.</p>
+
+<p>Once done, set your webserver user to be the owner of your unpacked ownCloud directory.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo chown -R www-data:www-data /var/www/owncloud/
+</code></pre></div></div>
+
+<ol>
+  <li>Use the <code class="highlighter-rouge">occ</code>(ownCloud console) command to complete the installation process.
+    <blockquote>
+      <p><strong>Note</strong>: occ is ownCoud’s command-line interface</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p>Use the <code class="highlighter-rouge">occ</code> command, from the root directory of the ownCloud source, to perform the installation. This removes the need to run the <a href="https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html">Graphical Installation Wizard</a>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Assuming you’ve unpacked the source to /var/www/owncloud/
+$ cd /var/www/owncloud/
+$ sudo -u www-data php occ maintenance:install \
+   --database "mysql" --database-name "owncloud" \
+   --database-user "root" --database-pass "password" \
+ 	   --admin-user "admin" --admin-pass "password"
+</code></pre></div></div>
+
+<blockquote>
+  <p>Note: You must <a href="https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/occ_command.html#http-user-label">Run occ As Your HTTP User</a>.</p>
+</blockquote>
+
+<p>If you want to use a directory other than the default (which is data inside the root ownCloud directory), you can also supply the <code class="highlighter-rouge">--data-dir</code> switch. For example, if you were using the command above and you wanted the data directory to be <code class="highlighter-rouge">/opt/owncloud/data</code>, then add <code class="highlighter-rouge">--data-dir/opt/owncloud/data</code> to the command.</p>
+
+<ol>
+  <li>Apply correct permissions to your ownCloud files and directories
+Once the command is executed, <a href="https://doc.owncloud.org/server/10.0/admin_manual/installation/manual_installation.html#set-strong-directory-permissions">Set Strong Directory Permissions</a> to your ownCloud files and directories.</li>
+</ol>
+
+<blockquote>
+  <p>Note: This is extremely important, as it helps protect your ownCloud installation and ensure that it will operate correctly.</p>
+</blockquote>
+
+<ol>
+  <li>(Optional) <a href="https://doc.owncloud.org/server/10.1/admin_manual/installation/installation_wizard.html#post-installation-steps">Post-Installation Steps</a></li>
+</ol>
+
+<h3 id="other-installation-methods">Other Installation Methods</h3>
+<p>Listed below are other methods you can use to install an OwnCloud server:</p>
+<ul>
+  <li><a href="https://doc.owncloud.org/server/10.1/admin_manual/installation/linux_installation.html">Linux Package Manager Installation</a> is used for signle-server setups.</li>
+  <li><a href="https://doc.owncloud.org/server/10.1/admin_manual/installation/installation_wizard.html">Installation Wizard</a> is used when the ownCloud prerequisites are fulfilled and all ownCloud files are installed.</li>
+  <li><a href="https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html">Manual Installation</a> can also be done on different Linux distributions
+    <ul>
+      <li><a href="https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#on-ubuntu-18.04-lts-server">Ubuntu 18.04 LTS Server</a></li>
+      <li><a href="https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#rhel-redhat-enterprise-linux-7.2">RHEL (RedHat Enterprise Linux) 7.2</a></li>
+      <li><a href="https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#centos-7">CentOS 7</a></li>
+      <li><a href="https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#sles-suse-linux-enterprise-server-12">SLES (SUSE Linux Enterprise Server) 12</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="configuring-owncloud-server">Configuring ownCloud server</h2>
+<p>Follow the link for a detailed overview on how to <a href="https://gk7700.github.io/Introduction/Configuration/">Configure an ownCloud Server</a></p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">ownCloud Quickstart maintained by <a href="https://github.com/gk7700">gk7700</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

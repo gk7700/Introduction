@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/Sample/assets/css/style.css?v=b67d0b7b091b57b0386e19956e92f7193e07ad47">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>user accounts | ownCloud Quickstart</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="user accounts" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Sample/Prerequisites/" />
+<meta property="og:url" content="http://localhost:4000/Sample/Prerequisites/" />
+<meta property="og:site_name" content="ownCloud Quickstart" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/Sample/Prerequisites/","headline":"user accounts","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gk7700/Introduction">View on GitHub</a>
+
+          <h1 id="project_title">ownCloud Quickstart</h1>
+          <h2 id="project_tagline"></h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2 id="prerequisites-for-installing-an-owncloud-server">Prerequisites for Installing an ownCloud Server</h2>
+
+<p>The following requirements must be met to install and configure an ownCloud server:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Specifications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Operating System</td>
+      <td>Ubuntu 16.04 and 18.04 <br /> Debian 7, 8, and 9 <br /> SUSE Linux Enterprise Server 12 with SP1, SP2, and SP3 <br /> Red Hat Enterprise Linux/Centos 6.9, 7.3, 7.4, and 7.5 <br /> Fedora 27, 28, and 29 <br /> openSUSE Leap 42.3 and 15</td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td>MySQL or MariaDB 5.5+ <br /> Oracle 11g <br /> PostgreSQL 9 (versions 10 and above are not yet supported) <br /> SQLite</td>
+    </tr>
+    <tr>
+      <td>Web server</td>
+      <td>Apache 2.4 with <code class="highlighter-rouge">prefork</code> and <code class="highlighter-rouge">mod_php</code></td>
+    </tr>
+    <tr>
+      <td>PHP Runtime</td>
+      <td>5.6, 7.0, 7.1, and 7.2</td>
+    </tr>
+    <tr>
+      <td>Server</td>
+      <td>Debian 7 and 8 <br /> SUSE Linux Enterprise Server 12 and 12 SP1 <br /> Red Hat Enterprise Linux/Centos 6.5 and 7 (7 is 64-bit only) <br /> Ubuntu 14.04 LTS <br /> NGINX with PHP-FPM (alternative but unsupported option)</td>
+    </tr>
+    <tr>
+      <td>Hypervisors</td>
+      <td>Hyper-V <br /> VMware ESX <br />  Xen <br /> KVM</td>
+    </tr>
+    <tr>
+      <td>Desktop</td>
+      <td>Windows 7+ <br /> Mac OS X 10.7+ (64-bit only) <br /> CentOS 6 and 7 (64-bit only) <br /> Ubuntu 16.04, 18.04, and 18.10 <br /> Debian 8.0 and 9.0 <br /> Fedora 27, 28, and 29 <br /> openSUSE Leap 42.3, 15.0, and 15.1</td>
+    </tr>
+    <tr>
+      <td>Mobile</td>
+      <td>iOS 9.0+ <br /> Android 4.0+</td>
+    </tr>
+    <tr>
+      <td>Web Browser</td>
+      <td>Edge (current version on Windows 10) <br /> IE11+ (except Compatibility Mode) <br /> Firefox 57+ or 52 ESR <br /> Chrome 66+ <br /> Safari 10+</td>
+    </tr>
+    <tr>
+      <td>Client Versions</td>
+      <td>Desktop Client 2.3.3 <br /> Android App <br /> iOS App</td>
+    </tr>
+    <tr>
+      <td>Memory</td>
+      <td>Minimum of 512 MB</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p><strong>Note</strong>: If you use Ubuntu 16.04 and want to use PHP 7.x:</p>
+  <ul>
+    <li>PHP 7.1 and 7.2 are only available via ppa. To add a <a href="https://itsfoss.com/ppa-guide/">PPA (Personal Package Archive)</a> to your system, use this command:<code class="highlighter-rouge">sudo add-aptrepository ppa:user/ppa-name</code>.</li>
+    <li>PHP 7.2 standard installable, but you have to install some mandatory modules yourself, such as intl.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p><strong>Note</strong>:
+It is recommended to use <strong>PHP {recommended-php-version}</strong> as older versions have reached {php-supported-versions-url}[EOL] and will be
+deprecated for use with ownCloud Server in a future release.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Note</strong>: Supported editions</p>
+  <ul>
+    <li>Red Hat Enterprise Linux &amp; Centos 7 are 64-bit only.</li>
+    <li>Oracle 11g is only supported for the Enterprise edition.</li>
+    <li>SQLite is not encouraged for production use</li>
+  </ul>
+</blockquote>
+
+<h3 id="database-requirements">Database Requirements</h3>
+<p>The following are required for running ownCloud together with a MySQL or MariaDB database:</p>
+<ul>
+  <li>Disabled or <code class="highlighter-rouge">BINLOG_FORMAT = MIXED or BINLOG_FORMAT = ROW</code> configured Binary Logging (See: db-binlog-label)</li>
+  <li>InnoDB storage engine (The MyISAM storage engine is not supported, see: dbstorage-engine-label)</li>
+  <li><code class="highlighter-rouge">READ COMMITED</code> transaction isolation level (See: db-transaction-label)</li>
+</ul>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">ownCloud Quickstart maintained by <a href="https://github.com/gk7700">gk7700</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
