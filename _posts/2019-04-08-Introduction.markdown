@@ -14,9 +14,9 @@ You can also subscribe to our monthly [newsletter](https://owncloud.org/newslett
 ## Getting Started
 This quickstart guide will provide the user a concise step-based approach to the following user stories:
 * [Installing and Configuring Owncloud server](https://gk7700.github.io/Introduction/Installing/)
-* [Enabling Users to Connect to Owncloud server Using the Server's IP address and Port 8080](https://RedhatTest2304.github.io/Redhat-Technical-Writer-Test/URL/)
-* [Adding User Accounts](https://RedhatTest2304.github.io/Redhat-Technical-Writer-Test/Adding/)
-* [Connecting to Owncloud server Using Desktop Client](https://RedhatTest2304.github.io/Redhat-Technical-Writer-Test/Desktop/)
+* [Enabling Users to Connect to Owncloud server Using the Server's IP address and Port 8080](https://gk7700.github.io/Introduction/URL/)
+* [Adding User Accounts](https://gk7700.github.io/Introduction/Adding/)
+* [Connecting to Owncloud server Using Desktop Client](https://gk7700.github.io/Introduction/Desktop/)
 
 ## Full Documentation  
  
@@ -24,7 +24,7 @@ See the [ownCloud Documentation](https://doc.owncloud.com/server/) for full docu
 
 ## Bugs and Feedback
 
-For bugs, questions and discussions please use the [GitHub Issues](https://github.com/RedhatTest2304/Redhat-Technical-Writer-Test/issues).  
+For bugs, questions and discussions please use the [GitHub Issues](https://github.com/gk7700/Introduction/issues).  
 
 ## License
 
@@ -32,4 +32,4 @@ Copyright (c) 2019 ownCloud Inc. All rights reserved.
 
 ## Contact Information
 
-Please contact if you need assistance regarding these quickstart guides, for discussing your case or requesting permission, by sending us an email to <gautam.kumar23041309@gmail.com>
+Please contact if you need assistance regarding these quickstart guides, for discussing your case or requesting permission, by sending us an email to <gk7700@gmail.com>
