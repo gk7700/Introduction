@@ -1,4 +1,4 @@
-## Redhat-Technical Writer Test
+## Technical Writing Sample
 
 ### Task A: Create a Quickstart for Installing and Using ownCloud 
 Create a quickstart for installing an Owncloud server and connecting to it as a client. Your quickstart must address the following user stories:    
